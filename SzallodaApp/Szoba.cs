@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SzallodaApp
 {
-    internal class Szoba
+    public class Szoba
     {
         public int SzobaSzam { get;}
         protected int alapar;

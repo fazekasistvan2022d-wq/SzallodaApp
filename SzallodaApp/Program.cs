@@ -18,8 +18,14 @@ namespace SzallodaApp
             Console.WriteLine(szoba1);
             Console.WriteLine(lakosztaly1);
 
-            Console.WriteLine(szoba1.ArKiszamitas(3));
-            Console.WriteLine(lakosztaly1.ArKiszamitas(3));
+            Console.WriteLine($"3 éjszaka egy normál szobánál: {szoba1.ArKiszamitas(3)} Ft");
+            Console.WriteLine($"3 éjszaka egy normál szobánál: {lakosztaly1.ArKiszamitas(3)} Ft");
+
+            //saját
+            Console.WriteLine("Kérem adja meg az éjszakák számát!");
+            int ejszakakDB = int.Parse(Console.ReadLine());
+            Console.WriteLine($" {ejszakakDB} éjszaka egy normál szobánál: {szoba1.ArKiszamitas(ejszakakDB)} Ft");
+            Console.WriteLine($" {ejszakakDB} éjszaka egy normál szobánál: {lakosztaly1.ArKiszamitas(ejszakakDB)} Ft");
         }
     }
 }
